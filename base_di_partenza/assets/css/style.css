@@ -1,5 +1,71 @@
 /* IMPOSTAZIONI GENERALI */
+.primo,.secondo, .terzo{
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid white; 
+  background-color: rgba(255, 255, 255, 0.641);
+  position: absolute;
+}
+.primo i,.secondo i, .terzo i{
+  scale:2;
+  position: relative;
+  top:15px;
+  color:rgb(43, 99, 204);
+}
+.terzo i{
+  color: rgb(217, 89, 89)
+}
+.primo{
+  bottom: -1680px;
+  right:-10px;
+  
+}
+.secondo{
+  bottom: -1760px;
+  right:-10px;
+  
+}
+.terzo{
+  bottom: -1835px;
+  right:-10px;
+  
+}
+aside div{
+  position:relative;
+}
+aside div .fa-tag{
+  scale: 4;
+  position: relative;
+  left: 88%;
+  top: 0;
+  opacity: 0.1;
+}
+input {
+  display: inline-block;
+  width: 60%;
+}
+.clearfix p:nth-of-type(2){
+  display: inline;
+}
+.imgLeft{
+  float: left;
+}
 
+
+section h2{
+  font-size: 2em;
+  width: 200px;
+  position: relative;
+  bottom: 50px;
+}
+.line{
+  width: 85%;
+  position: relative;
+  bottom: 40px;
+  opacity: 0.5;
+}
 body {
   font-family: Poppins, "Helvetica Neue", sans-serif;
   line-height: 1.6;
@@ -148,6 +214,10 @@ h1 + p {
     font-size: 1.8rem;
     font-weight: 700;
   }
+  table{
+    display: inline;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -165,6 +235,8 @@ h1 + p {
     font-size: 1.4rem;
     font-weight: 700;
   }
+  
+  
 }
 
 @media screen and (min-width: 700px) {
@@ -180,6 +252,7 @@ h1 + p {
   section {
     border-radius: 20px;
   }
+  
 }
 
 .imgLeft {
@@ -282,18 +355,29 @@ button {
   color: white;
   font-weight: bold;
 }
-@media screen and (min-width: 500px) {
-  input {
-    display: inline-block;
-    width: 70%;
-  }
+@media screen and (max-width: 699px) {
+ 
+  
+
+
 }
+
 @media screen and (min-width: 700px) {
   input {
     padding: 15px;
   }
   button {
     padding: 15px 30px;
+  }
+  .primo{
+    top: 10px;
+    right:-10px;
+    
+  }
+  .secondo{
+    top:80px;
+    right:-10px;
+    
   }
 }
 
@@ -319,11 +403,27 @@ aside div {
     width: 33.333%;
     margin-inline: -2px;
   }
-}
+
 aside div p:last-child {
   margin-bottom: 0;
   font-size: 0.8em;
   text-align: right;
+}
+body{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+.primo{
+  top: 10px;
+  right:-10px;
+  
+}
+.secondo{
+  top:80px;
+  right:-10px;
+  
+}
 }
 
 /* FOOTER */
@@ -384,13 +484,5 @@ footer a {
   .social,
   .toTop {
     display: none;
-  }
-}
-@media screen and(max-width: 500px){
-  .clearfix p:nth-of-type(2){
-    display: inline;
-  }
-  .imgLeft{
-    float: left;
   }
 }
